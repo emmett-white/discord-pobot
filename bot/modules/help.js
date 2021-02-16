@@ -26,5 +26,6 @@ exports.show = async (msg) => {
             .setFooter('Copyright © 2021 | PAWN Overflow BOT', 'https://i.ibb.co/gm5VRN5/pobot-logo.png');
 
         msg.channel.send(embed);
+        msg.react('💡');
     }
 }
