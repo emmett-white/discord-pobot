@@ -14,7 +14,7 @@ exports.callfunc = async (msg) => {
                 {
                     name: 'Player commands',
                     value: `${config.prefix}callbot, ${config.prefix}avatar, ` +
-                    `${config.prefix}covidtest, ${config.prefix}sexy`
+                    `${config.prefix}covidtest, ${config.prefix}sexy, ${config.prefix}gay`
                 },
                 {
                     name: 'Admin commands',

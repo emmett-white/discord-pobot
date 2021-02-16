@@ -14,7 +14,9 @@ const
     avatar = require('./modules/avatar.js'),
     kick = require('./modules/kick.js'),
     covid19 = require('./modules/covid19.js'),
-    sexygif = require('./modules/sexy.js');
+    sexygif = require('./modules/sexy.js'),
+    gay = require('./modules/gay.js'),
+    clear = require('./modules/clear.js');
 
 /**
  * Functions
@@ -28,6 +30,8 @@ client.on('message', async (msg) => {
     kick.callfunc(msg);
     covid19.callfunc(msg);
     sexygif.callfunc(msg);
+    gay.callfunc(msg);
+    clear.callfunc(msg);
 });
 
 client.login(config.token);

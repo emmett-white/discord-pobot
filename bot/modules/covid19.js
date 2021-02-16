@@ -16,7 +16,7 @@ exports.callfunc = async (msg) => {
             answer = covidResults[Math.floor(Math.random() * covidResults.length)];
 
         if (!user) {
-            return msg.channel.send('You didn\'t mention user to test.');
+            return msg.channel.send('You didn\'t mention the user to test.');
         }
 
         msg.channel.send(`${user.tag} Covid 19 test results: ${answer}`);
