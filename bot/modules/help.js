@@ -4,7 +4,7 @@ const
     
     config = require('../../config/config.json');
 
-exports.show = async (msg) => {
+exports.callfunc = async (msg) => {
     if (msg.content.startsWith(`${config.prefix}help`)) {
         const embed = new MessageEmbed()
             .setColor('#3366cc')
@@ -13,7 +13,8 @@ exports.show = async (msg) => {
             .addFields(
                 {
                     name: 'Player commands',
-                    value: `${config.prefix}avatar, ${config.prefix}idea`
+                    value: `${config.prefix}callbot, ${config.prefix}avatar, ` +
+                    `${config.prefix}covidtest, ${config.prefix}sexy`
                 },
                 {
                     name: 'Admin commands',

@@ -12,7 +12,9 @@ const
     callbot = require('./modules/callbot.js'),
     help = require('./modules/help.js'),
     avatar = require('./modules/avatar.js'),
-    kick = require('./modules/kick.js');
+    kick = require('./modules/kick.js'),
+    covid19 = require('./modules/covid19.js'),
+    sexygif = require('./modules/sexy.js');
 
 /**
  * Functions
@@ -20,10 +22,12 @@ const
 client.on('ready', async () => console.log(`Bot ${client.user.tag} has been successfully logged in.`));
 
 client.on('message', async (msg) => {
-    callbot.show(msg);
-    help.show(msg);
-    avatar.show(msg);
-    kick.show(msg);
+    callbot.callfunc(msg);
+    help.callfunc(msg);
+    avatar.callfunc(msg);
+    kick.callfunc(msg);
+    covid19.callfunc(msg);
+    sexygif.callfunc(msg);
 });
 
 client.login(config.token);

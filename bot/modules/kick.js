@@ -4,7 +4,7 @@ const
 
     config = require('../../config/config.json');
 
-exports.show = async (msg) => {
+exports.callfunc = async (msg) => {
     if (msg.content.startsWith(`${config.prefix}kick`)) {
         if (!msg.member.roles.cache.some(role => role.name === 'ADMIN')) {
             return msg.channel.send('You don\'t have a permission to kick members!');

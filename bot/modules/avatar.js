@@ -4,7 +4,7 @@ const
 
     config = require('../../config/config.json');
 
-exports.show = async (msg) => {
+exports.callfunc = async (msg) => {
     if (msg.content.startsWith(`${config.prefix}avatar`)) {
         const
             user = (msg.mentions.users.first() || msg.author),
