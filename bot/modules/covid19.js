@@ -1,5 +1,5 @@
 const
-    {Client} = require('discord.js'),
+    {Client, MessageEmbed} = require('discord.js'),
     client = new Client(),
 
     config = require('../../config/config.json');
@@ -19,7 +19,12 @@ exports.callfunc = async (msg) => {
             return msg.channel.send('You didn\'t mention the user to test.');
         }
 
-        msg.channel.send(`${user.tag} Covid 19 test results: ${answer}`);
         msg.react(answer === 'positive' ? ('🟩') : ('🟥'));
+
+        const embed = new MessageEmbed()
+            .setColor(0x3366cc)
+            .addField('Covid 19 test result', `${user.tag} is ${answer}.`, false);
+
+        msg.channel.send(embed);
     }
 }

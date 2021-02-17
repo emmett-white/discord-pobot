@@ -14,6 +14,10 @@ exports.callfunc = async (msg) => {
             user = msg.mentions.users.first(),
             args = msg.content.slice(config.prefix.length).trim().split(' ');
 
+        if (!args[1] || !args[2]) {
+            return msg.channel.send('Use $kick @member reason');
+        }
+
         if (user) {
             const member = msg.guild.members.resolve(user);
 

@@ -7,7 +7,7 @@ const
 exports.callfunc = async (msg) => {
     if (msg.content.startsWith(`${config.prefix}help`)) {
         const embed = new MessageEmbed()
-            .setColor('#3366cc')
+            .setColor(0x3366cc)
             .setAuthor('POBOT', 'https://i.ibb.co/gm5VRN5/pobot-logo.png')
             .setThumbnail('https://i.ibb.co/gm5VRN5/pobot-logo.png')
             .addFields(

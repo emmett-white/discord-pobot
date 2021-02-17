@@ -1,5 +1,5 @@
 const
-    {Client} = require('discord.js'),
+    {Client, MessageEmbed} = require('discord.js'),
     client = new Client(),
 
     config = require('../../config/config.json');
@@ -12,6 +12,11 @@ exports.callfunc = async (msg) => {
             return msg.channel.send('You didn\'t mention the user.');
         }
 
-        msg.channel.send(`${user.tag} is ${Math.floor(Math.random() * (100 - 0 + 1)) + 0}% gay.`);
+        // msg.channel.send(`${user.tag} is ${Math.floor(Math.random() * (100 - 0 + 1)) + 0}% gay.`);
+        const embed = new MessageEmbed()
+            .setColor(0x3366cc)
+            .addField('Gay level', `${user.tag} is ${Math.floor(Math.random() * (100 - 0 + 1)) + 0}% gay.`, false);
+
+        msg.channel.send(embed);
     }
 }
