@@ -21,7 +21,11 @@ const
 /**
  * Functions
  */
-client.on('ready', async () => console.log(`Bot ${client.user.tag} has been successfully logged in.`));
+client.on('ready', async () => {
+    client.user.setActivity('$help', ({type: "LISTENING"}));
+
+    console.log(`Bot ${client.user.tag} has been successfully logged in.`);
+});
 
 client.on('message', async (msg) => {
     callbot.callfunc(msg);

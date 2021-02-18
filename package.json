@@ -1,0 +1,23 @@
+{
+  "name": "discord-pobot",
+  "version": "1.0.0",
+  "description": "- [Emmett White](https://github.com/emmett-white)",
+  "main": "./bot/app.js",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmett-white/discord-pobot.git"
+  },
+  "author": "Emmett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmett-white/discord-pobot/issues"
+  },
+  "homepage": "https://github.com/emmett-white/discord-pobot#readme"
+}
