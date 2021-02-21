@@ -42,10 +42,6 @@ client.on('message', async (msg) => {
     eww.callfunc(msg);
     memes.callfunc(msg);
     gif.callfunc(msg);
-
-    if (msg.content.startsWith(`${config.prefix}ytdl`)) {
-        
-    }
 });
 
 client.login(config.token);
