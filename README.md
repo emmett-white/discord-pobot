@@ -16,6 +16,7 @@
 | prefix + memes
 | prefix + sexy
 | prefix + hentai
+| prefix + gif
 
 ---
 ### Usage
@@ -46,6 +47,9 @@ USAGE: prefi + sexy
 
 COMMAND: hentai
 USAGE: prefix + hentai
+
+COMMAND: gif
+USAGE: prefix + gif <query> or gif <query+query>
 
 COMMAND: clear
 USAGE: prefix + clear <lines>
