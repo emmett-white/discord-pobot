@@ -18,7 +18,8 @@ const
     gay = require('./modules/gay.js'),
     clear = require('./modules/clear.js'),
     eww = require('./modules/eww.js'),
-    memes = require('./modules/memes.js');
+    memes = require('./modules/memes.js'),
+    gif = require('./modules/gif.js');
 
 /**
  * Functions
@@ -40,6 +41,7 @@ client.on('message', async (msg) => {
     clear.callfunc(msg);
     eww.callfunc(msg);
     memes.callfunc(msg);
+    gif.callfunc(msg);
 });
 
 client.login(config.token);
