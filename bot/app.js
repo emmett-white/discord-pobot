@@ -16,7 +16,9 @@ const
     covid19 = require('./modules/covid19.js'),
     sexygif = require('./modules/sexy.js'),
     gay = require('./modules/gay.js'),
-    clear = require('./modules/clear.js');
+    clear = require('./modules/clear.js'),
+    eww = require('./modules/eww.js'),
+    memes = require('./modules/memes.js');
 
 /**
  * Functions
@@ -36,6 +38,8 @@ client.on('message', async (msg) => {
     sexygif.callfunc(msg);
     gay.callfunc(msg);
     clear.callfunc(msg);
+    eww.callfunc(msg);
+    memes.callfunc(msg);
 });
 
 client.login(config.token);
